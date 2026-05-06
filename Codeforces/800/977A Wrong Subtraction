@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+ 
+int main() {
+   int n, k;
+   cin >> n >> k;
+   int num = n;
+   
+   while(k--){
+       if(num % 10 == 0){
+           num /= 10;
+       } else {
+           num--;
+       }
+   }
+   
+   cout << num << endl;
+   return 0;
+}
